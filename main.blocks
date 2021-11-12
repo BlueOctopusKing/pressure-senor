@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="LXvUS3:Rf}w*N8lBF_9+">value</variable></variables><block type="device_forever" id="[=H0UUC`@C%Wcvw7a~w$" x="0" y="0"><comment>This makes sure the numbers are constantly showing.</comment><statement name="HANDLER"><block type="variables_set" id=":)]M/*$MkuR!KWphIUoK"><field name="VAR" id="LXvUS3:Rf}w*N8lBF_9+">value</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="`=F(KI!YXPiw`s%H7@m`"><field name="name">AnalogPin.P1</field></block></value><next><block type="device_show_number" id="TpCgsQ$(SdfZNDp[/2%n"><comment>This shows how hard you pressed it.</comment><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="w-t)P!%iGx,yy|2L#ln6"><field name="VAR" id="LXvUS3:Rf}w*N8lBF_9+">value</field></block></value><next><block type="controls_if" id="dHcSF5_Nju5!M*NkQ2.E"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="nUd1HpEPzvq6T0dK;1xG"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="r)2bx3^aNGRzg,bP!zNk"><field name="VAR" id="LXvUS3:Rf}w*N8lBF_9+">value</field></block></value><value name="B"><shadow type="math_number" id="(Ooy(!JhnEU%iy(9SRN$"><field name="NUM">500</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="*|T1l9~9ms-SdfaG,o}T"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        # . . . # 
+        . # . # . 
+        . . # . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="-zcA0],*wEC+Op[61kgu"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . . 
+        . . . . .
+        `</field></block></statement></block></next></block></next></block></statement></block></xml>
